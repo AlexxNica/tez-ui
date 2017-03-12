@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tez.UI.js - Basic Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<style type="text/css">
+html, body {
+	font-family: Helvetica Neue, Segoe UI Light, Arial;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	line-height: 5em;
+}
+</style>
+</head>
+<body>
+<div class="container">
+</div>
+<script src="https://cdn.jsdelivr.net/tez.js/latest/Tez.min.js"></script>
+<script src="Tez.UI.min.js"></script>
+<script>
+let button = UI.ui2node({
+		input: {
+			tag: 'button',
+			attrs: `class="btn btn-primary"`,
+			content: `<icon id="settings_set01" byte="href"></icon>
+			<icon-title val="Why">so</icon-title>
+			<span>Button</span>`
+		}
+	});
+let n2a = UI.node2apply({
+		input: button,
+		parent: document.body
+	});
+let buttonClass = new Tez.domClass(button).setEvent(null, 'click', function (item, e) {
+		this.setContent(item.innerHTML.replace(/(span|h1)/g, item.querySelector('h1') ? 'h2' : 'h1'));
+	});
+</script>
+</body>
+</html>
