@@ -3,8 +3,8 @@ UI add-on for amazing Tez.js library
 
 # Example
 ```javascript
+import Tez from 'tez.js';
 import * as Components from 'tez-ui';
-import domClass from 'tez';
 
 const { Button, Checkbox } = Components;
 
@@ -14,7 +14,7 @@ class ButtonChrome {
 	}
 }
 
-let newConst = new domClass('<div/>');
+let newConst = new Tez('<div/>');
 
 	newConst.setView(ButtonChrome);
 

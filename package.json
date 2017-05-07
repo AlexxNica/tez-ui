@@ -2,7 +2,7 @@
 	"name": "tez-ui",
 	"version": "0.0.0-development",
 	"description": "UI add-on for amazing Tez.js library",
-	"main": "Tez.UI.js",
+	"main": "Tez.UI.dist.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
