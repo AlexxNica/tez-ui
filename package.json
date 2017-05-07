@@ -1,6 +1,6 @@
 {
 	"name": "tez-ui",
-	"version": "0.0.0-development",
+	"version": "0.0.0-development.1",
 	"description": "UI add-on for amazing Tez.js library",
 	"main": "Tez.UI.dist.js",
 	"scripts": {
