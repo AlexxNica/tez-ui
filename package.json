@@ -1,25 +1,32 @@
 {
-	"name": "tez-ui",
-	"version": "0.0.0-development.1",
-	"description": "UI add-on for amazing Tez.js library",
-	"main": "Tez.UI.dist.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/dalisoft/tez-ui.git"
-	},
-	"keywords": [
-		"ui"
-	],
-	"dependencies": {
-		"tez.js": "latest"
-	},
-	"author": "dalisoft",
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/dalisoft/tez-ui/issues"
-	},
-	"homepage": "https://github.com/dalisoft/tez-ui#readme"
+  "name": "tez-ui",
+  "version": "0.0.0-development.1",
+  "description": "UI add-on for amazing Tez.js library",
+  "main": "Tez.UI.dist.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalisoft/tez-ui.git"
+  },
+  "keywords": [
+    "ui"
+  ],
+  "dependencies": {
+    "tez.js": "latest"
+  },
+  "author": "dalisoft",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dalisoft/tez-ui/issues"
+  },
+  "homepage": "https://github.com/dalisoft/tez-ui#readme",
+  "devDependencies": {
+    "rollup": "^0.41.6",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-watch": "^3.2.2"
+  }
 }

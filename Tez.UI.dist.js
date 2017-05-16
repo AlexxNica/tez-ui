@@ -1,6 +1,6 @@
-import { createElement }, Tez from 'tez.js';
+import Tez, { createElement } from 'tez.js';
 
-export class UIElement {
+export default class UIElement {
 	constructor(view) {
 		this.props = view.props || {};
 	}
